@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    background-color: grey;
+}
+.Header {
+
+    display: flex;
+    flex-direction: row;
+    max-height: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.Pfp {
+    width: 200px;
+    border-radius: 50%;
+}
+.Icon {
+    display: inline-block;
+}
+.ICON {
+    width: 30px;
+    border-radius: 22px;
+    margin-left: 5px;
+}
+.Head1 {
+    max-width: 300px;
+}
+.Head2 {
+    flex: 1;
+    margin-left: 50px;
+    margin-top:  50px; ;
+}
+.Name {
+    margin-left: 50px;
+    color: aliceblue;
+}
