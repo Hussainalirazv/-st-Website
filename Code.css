@@ -51,7 +51,12 @@ body{
     color: white;
 }
 .Start {
+    bottom: 785px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
     background-image: url("Baack.jfif");
+    position: fixed;
     display: grid;
     padding-bottom: 13px;
 }
