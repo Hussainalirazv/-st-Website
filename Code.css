@@ -27,7 +27,7 @@ body{
     border-radius: 22px;
     position: relative;
 }
-.Icon .Hoverr {
+.Icon.Hoverr {
     position: absolute;
     background-color:white;
     padding-left: 8px;
@@ -38,7 +38,7 @@ body{
     opacity: 0;
     bottom: -5x;
 }    
-.Icon:hover .Hoverr {
+.Icon:hover.Hoverr {
     opacity: 1;
 }
 .Head1 {
