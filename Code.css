@@ -1,22 +1,40 @@
 body{
     margin: 0;
-    background-color: black;
-    padding-bottom: 687px;
+    background: url(https://images.pexels.com/photos/1097456/pexels-photo-1097456.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    padding-bottom: 1000px;
 }
 .Header {
     display: flex;
     flex-direction: row;
 }
+.navigation {
+    display: fixed;
+}
 .Pfp {
     margin-top: 10px;
     width: 200px;
-    height: 200px;
+    height: 180px;
     border-radius: 200px;
     background: #e0e0e0;
+    transition: 0.5s;
 }
 .Pfp:hover {
     width: 400px;
     height: 400px;
+}
+.Nav1{
+    display: fixed;
+    margin-top: 100px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border-color: aqua;
+    border-style: thin;
+    background-color: aqua;
+    color: black;
+    font-size: 20px;
+}
+.nav1:hover {
+    cursor: grab;
 }
 .Icon {
     display: inline-block;
@@ -26,6 +44,7 @@ body{
     width: 30px;
     border-radius: 22px;
     position: relative;
+    transform: translateY(5px);
 }
 .Icon .Hoverr {
     position: absolute;
@@ -37,6 +56,8 @@ body{
     border-radius: 10px;
     opacity: 0;
     bottom: -5x;
+    transition: 0.5s;
+
 }    
 .Icon:hover .Hoverr {
     opacity: 1;
@@ -44,23 +65,29 @@ body{
 .Head1 {
     flex: 1;
     max-width: 400px;
-    margin-left: 100px;
+    margin-left: 0px;
 }
 .Head2 {
     flex: 2;
     margin-top:  50px; 
-    margin-right: 100px;
+    margin-right: 80px;
     text-align: right;
 }
 .Name {
     margin-left: 50px;
     color: aliceblue;
 }
-.text {
+.text_Intro {
+    transition: all 0.5s ease;
     text-align: center;
     font-size: 20px;
     font-family: Unbounded;
     color: aqua;
+}
+.text_Intro:hover {
+    transform: scale(2,2);
+    color: black;
+    background-color: aqua;
 }
 .Welcome {
     margin-top: 20px;
@@ -74,30 +101,36 @@ body{
     top: 0px;
     left: 0px;
     right: 0px;
-    background-image: url("Baack.jfif");
     position: fixed;
     display: grid;
     padding-bottom: 13px;
 }
 .Bucketlist {
+    background-color: rgba(0, 0, 0, 0.1);
     display: grid;
     border: solid;
+    margin: 0px 210px 0px 210px;
     border-radius: 10px;
     border-color: aquamarine;
     padding-bottom: 50px;
+    transition: 0.5s;
+    color: aquamarine;
+    text-align: center;
+}
+.Bucketlist:hover{
+    transform: translateY(-10px);
+    background-color: orange;
+    border-color: black;
+    color: black;
 }
 .Programming-Languages {
     text-align: center;
-    color: aqua;
 }
 .container {
-    background-color: rgba(0, 0, 0, 0.1);
-    width: 60%;
     height: 15px;
-    margin-left: 15%;
-    margin-right: 15%;
     align-items: center;
-    margin-bottom: 30px
+    justify-content: center;
+    margin-bottom: 30px;
 }
 .Container__progress {
     border-radius: 50px;
@@ -106,7 +139,7 @@ body{
     width: 100%;
     height: 15px;
     font-size: 12px;
-    background-color: #357edd;
+    background-color: aqua;
     color: #fff;
     text-align: center;
 }
